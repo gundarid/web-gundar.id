@@ -32,6 +32,12 @@ const description = "open-source platform designed to empower students by stream
               <p class="text-gray-600 text-sm">Share ideas, report issues, or help others.</p>
             </div>
           </div>
+
+          <div>
+            <p>Yang mau benerin tinggal contribute aja ya guys.</p>
+            <br>
+          </div>
+
           <a href="https://github.com/gundarid" target="_blank" rel="noopener noreferrer"
             class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 transition duration-300 shadow-lg">
             Join Us on GitHub
