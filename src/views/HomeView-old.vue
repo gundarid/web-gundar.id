@@ -3,8 +3,8 @@ import { RouterLink } from 'vue-router'
 import { ref, onMounted } from 'vue'
 
 // Entity: Business logic for tagline
-const tagline = "Break the code"
-const emphasis = "Not the Spirit \n gundar.id"
+const tagline = "nothing says tech"
+const emphasis = "like being on gundar.id_"
 const description = "open-source platform that empowers students through efficient organization and automation."
 
 // Animation state
@@ -34,13 +34,11 @@ onMounted(() => {
       <section class="trust-section">
         <div class="trust-content">
           <h2 class="trust-heading">
-            <span class="trust-number">Let's improve</span> together,
+            <span class="trust-number">500+</span> students
             <br>
-            make it <span class="trust-highlight">more</span> functional,
+            trust <span class="trust-highlight">gundar.id</span> for
             <br>
-            shaping skill
-            <br>
-            for a <span class="trust-highlight">better</span> future
+            their academic needs.
           </h2>
         </div>
       </section>
