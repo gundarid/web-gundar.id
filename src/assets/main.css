@@ -17,6 +17,13 @@
   --color-text-muted: #606060;
   --color-accent: #ffffff;
   
+  /* Blue Glow Colors */
+  --glow-blue: #3b82f6;
+  --glow-blue-light: rgba(59, 130, 246, 0.6);
+  --glow-blue-soft: rgba(59, 130, 246, 0.3);
+  --glow-blue-subtle: rgba(59, 130, 246, 0.15);
+  --glow-blue-faint: rgba(59, 130, 246, 0.05);
+  
   /* Spacing */
   --space-section-sm: 4rem;
   --space-section-md: 6rem;
@@ -67,6 +74,9 @@ h1 {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
+  text-shadow: 0 0 40px var(--glow-blue-soft),
+               0 0 80px var(--glow-blue-subtle),
+               0 0 120px var(--glow-blue-faint);
 }
 
 h2 {
@@ -74,12 +84,16 @@ h2 {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.01em;
+  text-shadow: 0 0 30px var(--glow-blue-soft),
+               0 0 60px var(--glow-blue-subtle);
 }
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
   line-height: 1.2;
+  text-shadow: 0 0 20px var(--glow-blue-soft),
+               0 0 40px var(--glow-blue-subtle);
 }
 
 p {
@@ -132,7 +146,9 @@ a:hover {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px var(--glow-blue-soft),
+              0 5px 20px var(--glow-blue-soft),
+              0 0 0 4px var(--glow-blue-subtle);
 }
 
 .btn-outline {
@@ -144,6 +160,40 @@ a:hover {
 .btn-outline:hover {
   background: var(--color-accent);
   color: var(--color-bg-dark);
+}
+
+/* Blue Glow Utilities */
+.glow-blue-text {
+  text-shadow: 0 0 30px var(--glow-blue-soft),
+               0 0 60px var(--glow-blue-subtle);
+}
+
+.glow-blue-box {
+  box-shadow: 0 0 30px var(--glow-blue-soft),
+              0 0 60px var(--glow-blue-subtle),
+              inset 0 0 40px var(--glow-blue-faint);
+}
+
+.glow-blue-border {
+  border: 1px solid var(--glow-blue);
+  box-shadow: 0 0 20px var(--glow-blue-soft),
+              inset 0 0 20px var(--glow-blue-faint);
+}
+
+.glow-blue-intense {
+  text-shadow: 0 0 40px var(--glow-blue-light),
+               0 0 80px var(--glow-blue-soft),
+               0 0 120px var(--glow-blue-subtle);
+}
+
+/* Hover Glow Effects */
+.hover-glow-blue {
+  transition: all var(--transition-normal);
+}
+
+.hover-glow-blue:hover {
+  text-shadow: 0 0 20px var(--glow-blue-light),
+               0 0 40px var(--glow-blue-soft);
 }
 
 /* Responsive utilities */

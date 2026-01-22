@@ -38,7 +38,7 @@ onMounted(() => {
             <br>
             make it <span class="trust-highlight">more</span> functional,
             <br>
-            shaping skill
+            shaping our skill
             <br>
             for a <span class="trust-highlight">better</span> future
           </h2>
@@ -52,15 +52,15 @@ onMounted(() => {
           <p class="section-description">Join our open-source community. Whether you're a developer, designer, or student, your contributions matter.</p>
           
           <div class="contribute-grid">
-            <div class="contribute-card">
+            <div class="contribute-card hover-glow-blue">
               <div class="card-label">CODE /</div>
               <p class="card-text">Develop features, fix bugs, improve performance.</p>
             </div>
-            <div class="contribute-card">
+            <div class="contribute-card hover-glow-blue">
               <div class="card-label">DESIGN /</div>
               <p class="card-text">Create UI/UX, improve user experience.</p>
             </div>
-            <div class="contribute-card">
+            <div class="contribute-card hover-glow-blue">
               <div class="card-label">COMMUNITY /</div>
               <p class="card-text">Share ideas, report issues, help others.</p>
             </div>
@@ -86,22 +86,22 @@ onMounted(() => {
           </div>
           
           <div class="projects-grid">
-            <div class="project-card">
+            <div class="project-card hover-glow-blue">
               <div class="project-label">SECURITY /</div>
               <h3 class="project-title">API Visualization</h3>
               <p class="project-description">Secure your APIs with monitoring tools.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card hover-glow-blue">
               <div class="project-label">TOOLS /</div>
               <h3 class="project-title">Shortlink</h3>
               <p class="project-description">Create and manage short URLs.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card hover-glow-blue">
               <div class="project-label">NETWORK /</div>
               <h3 class="project-title">Free VPN</h3>
               <p class="project-description">Secure open-source VPN solution.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card hover-glow-blue">
               <div class="project-label">DEVOPS /</div>
               <h3 class="project-title">Self-host Registry</h3>
               <p class="project-description">Host Docker images and repos.</p>
@@ -280,11 +280,16 @@ onMounted(() => {
   padding: 2rem;
   background: var(--color-bg-section);
   border-radius: 0.5rem;
-  transition: transform var(--transition-normal);
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
 }
 
 .contribute-card:hover {
   transform: translateY(-4px);
+  border-color: var(--glow-blue);
+  box-shadow: 0 10px 30px var(--glow-blue-soft),
+              0 5px 15px var(--glow-blue-subtle),
+              inset 0 0 20px var(--glow-blue-faint);
 }
 
 .card-label {
@@ -334,7 +339,10 @@ onMounted(() => {
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-text-muted);
+  border-color: var(--glow-blue);
+  box-shadow: 0 10px 30px var(--glow-blue-soft),
+              0 5px 15px var(--glow-blue-subtle),
+              inset 0 0 20px var(--glow-blue-faint);
 }
 
 .project-label {
@@ -387,7 +395,9 @@ onMounted(() => {
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px var(--glow-blue-soft),
+              0 5px 20px var(--glow-blue-soft),
+              0 0 0 4px var(--glow-blue-subtle);
 }
 
 .arrow-icon {

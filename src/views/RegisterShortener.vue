@@ -226,11 +226,18 @@ onMounted(() => {
 
 .back-link:hover {
   color: var(--color-text-primary);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
 .back-link svg {
   width: 1.25rem;
   height: 1.25rem;
+  filter: drop-shadow(0 0 0px rgba(59, 130, 246, 0));
+  transition: filter var(--transition-fast);
+}
+
+.back-link:hover svg {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.6));
 }
 
 .header-label {
@@ -249,6 +256,8 @@ onMounted(() => {
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 30px rgba(59, 130, 246, 0.3),
+               0 0 60px rgba(59, 130, 246, 0.15);
 }
 
 .page-description {
@@ -312,8 +321,11 @@ onMounted(() => {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--color-text-primary);
+  border-color: #3b82f6;
   background: var(--color-bg-darker);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1),
+              0 0 20px rgba(59, 130, 246, 0.3),
+              inset 0 0 30px rgba(59, 130, 246, 0.05);
 }
 
 .form-row {
@@ -346,7 +358,9 @@ onMounted(() => {
 
 .submit-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.4),
+              0 5px 20px rgba(59, 130, 246, 0.3),
+              0 0 0 4px rgba(59, 130, 246, 0.2);
 }
 
 .submit-button:disabled {
@@ -406,7 +420,10 @@ onMounted(() => {
   background: var(--color-bg-section);
   padding: 2.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-text-primary);
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3),
+              0 0 60px rgba(59, 130, 246, 0.15),
+              inset 0 0 40px rgba(59, 130, 246, 0.05);
   animation: slideUp 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
@@ -477,8 +494,10 @@ onMounted(() => {
 
 .copy-button:hover {
   background: var(--color-bg-section);
-  color: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  color: #3b82f6;
+  border-color: #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4),
+              inset 0 0 10px rgba(59, 130, 246, 0.1);
 }
 
 .copy-button svg {
